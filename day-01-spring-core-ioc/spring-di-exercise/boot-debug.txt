@@ -15,7 +15,7 @@
 [INFO] Nothing to compile - all classes are up to date.
 [INFO] 
 [INFO] --- resources:3.5.0:testResources (default-testResources) @ spring-di-exercise ---
-[INFO] skip non existing resourceDirectory /home/mdanial/Dev/Learning/springboot_concepts/spring-di-exercise/src/test/resources
+[INFO] skip non existing resourceDirectory /home/mdanial/Dev/Learning/springboot_concepts/springboot-revision/day-01-spring-core-ioc/spring-di-exercise/src/test/resources
 [INFO] 
 [INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ spring-di-exercise ---
 [INFO] Nothing to compile - all classes are up to date.
@@ -35,32 +35,32 @@
 
  :: Spring Boot ::                (v4.1.1)
 
-2026-10-15T07:37:05.164+05:00  INFO 5141 --- [spring-di-exercise] [           main] c.e.s.SpringDiExerciseApplication        : Starting SpringDiExerciseApplication using Java 21.0.9 with PID 5141 (/home/mdanial/Dev/Learning/springboot_concepts/spring-di-exercise/target/classes started by mdanial in /home/mdanial/Dev/Learning/springboot_concepts/spring-di-exercise)
-2026-10-15T07:37:05.167+05:00  INFO 5141 --- [spring-di-exercise] [           main] c.e.s.SpringDiExerciseApplication        : No active profile set, falling back to 1 default profile: "default"
-2026-10-15T07:37:05.167+05:00 DEBUG 5141 --- [spring-di-exercise] [           main] o.s.boot.SpringApplication               : Loading source class com.example.spring_di_exercise.SpringDiExerciseApplication
-2026-10-15T07:37:05.220+05:00 DEBUG 5141 --- [spring-di-exercise] [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@481ba2cf
-2026-10-15T07:37:05.949+05:00 DEBUG 5141 --- [spring-di-exercise] [           main] o.s.b.t.s.TomcatServletWebServerFactory  : Code archive: /home/mdanial/.m2/repository/org/springframework/boot/spring-boot-web-server/4.1.1/spring-boot-web-server-4.1.1.jar
-2026-10-15T07:37:05.950+05:00 DEBUG 5141 --- [spring-di-exercise] [           main] o.s.b.t.s.TomcatServletWebServerFactory  : Code archive: /home/mdanial/.m2/repository/org/springframework/boot/spring-boot-web-server/4.1.1/spring-boot-web-server-4.1.1.jar
-2026-10-15T07:37:05.950+05:00 DEBUG 5141 --- [spring-di-exercise] [           main] o.s.b.t.s.TomcatServletWebServerFactory  : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
-2026-10-15T07:37:05.973+05:00  INFO 5141 --- [spring-di-exercise] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-10-15T07:37:05.986+05:00  INFO 5141 --- [spring-di-exercise] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-10-15T07:37:05.986+05:00  INFO 5141 --- [spring-di-exercise] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
-2026-10-15T07:37:06.025+05:00 DEBUG 5141 --- [spring-di-exercise] [           main] b.w.c.s.WebApplicationContextInitializer : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2026-10-15T07:37:06.025+05:00  INFO 5141 --- [spring-di-exercise] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 805 ms
-2026-10-15T07:37:06.039+05:00 DEBUG 5141 --- [spring-di-exercise] [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
-2026-10-15T07:37:06.039+05:00 DEBUG 5141 --- [spring-di-exercise] [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
-2026-10-15T07:37:06.057+05:00 DEBUG 5141 --- [spring-di-exercise] [           main] o.s.b.s.f.OrderedRequestContextFilter    : Filter 'requestContextFilter' configured for use
-2026-10-15T07:37:06.059+05:00 DEBUG 5141 --- [spring-di-exercise] [           main] o.s.b.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
-2026-10-15T07:37:06.059+05:00 DEBUG 5141 --- [spring-di-exercise] [           main] o.s.b.s.filter.OrderedFormContentFilter  : Filter 'formContentFilter' configured for use
-2026-10-15T07:37:06.085+05:00  INFO 5141 --- [spring-di-exercise] [           main] c.e.s.lifecycle.LifeCycleBean            : 1. Constructor
-2026-10-15T07:37:06.086+05:00  INFO 5141 --- [spring-di-exercise] [           main] c.e.s.lifecycle.LifeCycleBean            : 2. PostConstruct
-2026-10-15T07:37:06.155+05:00 DEBUG 5141 --- [spring-di-exercise] [           main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.example.spring_di_exercise'. Automatic @Repository and @Entity scanning is enabled.
-2026-10-15T07:37:06.215+05:00 DEBUG 5141 --- [spring-di-exercise] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
-2026-10-15T07:37:06.232+05:00 DEBUG 5141 --- [spring-di-exercise] [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2026-10-15T07:37:06.246+05:00 DEBUG 5141 --- [spring-di-exercise] [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
-2026-10-15T07:37:06.275+05:00 DEBUG 5141 --- [spring-di-exercise] [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2026-10-15T07:37:06.326+05:00  INFO 5141 --- [spring-di-exercise] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-10-15T07:37:06.333+05:00 DEBUG 5141 --- [spring-di-exercise] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-10-20T16:34:02.048+05:00  INFO 9807 --- [spring-di-exercise] [           main] c.e.s.SpringDiExerciseApplication        : Starting SpringDiExerciseApplication using Java 21.0.9 with PID 9807 (/home/mdanial/Dev/Learning/springboot_concepts/springboot-revision/day-01-spring-core-ioc/spring-di-exercise/target/classes started by mdanial in /home/mdanial/Dev/Learning/springboot_concepts/springboot-revision/day-01-spring-core-ioc/spring-di-exercise)
+2026-10-20T16:34:02.050+05:00  INFO 9807 --- [spring-di-exercise] [           main] c.e.s.SpringDiExerciseApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-10-20T16:34:02.051+05:00 DEBUG 9807 --- [spring-di-exercise] [           main] o.s.boot.SpringApplication               : Loading source class com.example.spring_di_exercise.SpringDiExerciseApplication
+2026-10-20T16:34:02.092+05:00 DEBUG 9807 --- [spring-di-exercise] [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@481ba2cf
+2026-10-20T16:34:02.725+05:00 DEBUG 9807 --- [spring-di-exercise] [           main] o.s.b.t.s.TomcatServletWebServerFactory  : Code archive: /home/mdanial/.m2/repository/org/springframework/boot/spring-boot-web-server/4.1.1/spring-boot-web-server-4.1.1.jar
+2026-10-20T16:34:02.725+05:00 DEBUG 9807 --- [spring-di-exercise] [           main] o.s.b.t.s.TomcatServletWebServerFactory  : Code archive: /home/mdanial/.m2/repository/org/springframework/boot/spring-boot-web-server/4.1.1/spring-boot-web-server-4.1.1.jar
+2026-10-20T16:34:02.726+05:00 DEBUG 9807 --- [spring-di-exercise] [           main] o.s.b.t.s.TomcatServletWebServerFactory  : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2026-10-20T16:34:02.745+05:00  INFO 9807 --- [spring-di-exercise] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-20T16:34:02.758+05:00  INFO 9807 --- [spring-di-exercise] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-20T16:34:02.758+05:00  INFO 9807 --- [spring-di-exercise] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-20T16:34:02.790+05:00 DEBUG 9807 --- [spring-di-exercise] [           main] b.w.c.s.WebApplicationContextInitializer : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2026-10-20T16:34:02.791+05:00  INFO 9807 --- [spring-di-exercise] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 698 ms
+2026-10-20T16:34:02.805+05:00 DEBUG 9807 --- [spring-di-exercise] [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2026-10-20T16:34:02.805+05:00 DEBUG 9807 --- [spring-di-exercise] [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2026-10-20T16:34:02.823+05:00 DEBUG 9807 --- [spring-di-exercise] [           main] o.s.b.s.f.OrderedRequestContextFilter    : Filter 'requestContextFilter' configured for use
+2026-10-20T16:34:02.825+05:00 DEBUG 9807 --- [spring-di-exercise] [           main] o.s.b.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
+2026-10-20T16:34:02.825+05:00 DEBUG 9807 --- [spring-di-exercise] [           main] o.s.b.s.filter.OrderedFormContentFilter  : Filter 'formContentFilter' configured for use
+2026-10-20T16:34:02.848+05:00  INFO 9807 --- [spring-di-exercise] [           main] c.e.s.lifecycle.LifeCycleBean            : 1. Constructor
+2026-10-20T16:34:02.849+05:00  INFO 9807 --- [spring-di-exercise] [           main] c.e.s.lifecycle.LifeCycleBean            : 2. PostConstruct
+2026-10-20T16:34:02.918+05:00 DEBUG 9807 --- [spring-di-exercise] [           main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.example.spring_di_exercise'. Automatic @Repository and @Entity scanning is enabled.
+2026-10-20T16:34:02.976+05:00 DEBUG 9807 --- [spring-di-exercise] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2026-10-20T16:34:02.991+05:00 DEBUG 9807 --- [spring-di-exercise] [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-10-20T16:34:03.003+05:00 DEBUG 9807 --- [spring-di-exercise] [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-10-20T16:34:03.028+05:00 DEBUG 9807 --- [spring-di-exercise] [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-10-20T16:34:03.074+05:00  INFO 9807 --- [spring-di-exercise] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-10-20T16:34:03.080+05:00 DEBUG 9807 --- [spring-di-exercise] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 
 ============================
@@ -254,6 +254,10 @@ Negative matches:
       Did not match:
          - @ConditionalOnClass did not find required class 'org.aspectj.weaver.Advice' (OnClassCondition)
 
+   DefaultGreetingConfiguration#defaultGreetingService:
+      Did not match:
+         - @ConditionalOnMissingBean (types: com.example.spring_di_exercise.GreetingService; SearchStrategy: all) found beans of type 'com.example.spring_di_exercise.GreetingService' defaultGreetingService (OnBeanCondition)
+
    DispatcherServletAutoConfiguration.DispatcherServletConfiguration#multipartResolver:
       Did not match:
          - @ConditionalOnBean (types: org.springframework.web.multipart.MultipartResolver; SearchStrategy: all) did not find any beans of type org.springframework.web.multipart.MultipartResolver (OnBeanCondition)
@@ -432,15 +436,18 @@ Unconditional classes:
 
 
 
-2026-10-15T07:37:06.336+05:00  INFO 5141 --- [spring-di-exercise] [           main] c.e.s.SpringDiExerciseApplication        : Started SpringDiExerciseApplication in 1.614 seconds (process running for 1.912)
-2026-10-15T07:37:06.337+05:00 DEBUG 5141 --- [spring-di-exercise] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
-Prototype Bean is created: 1871362568
-In test method Prototype Bean has Code: 1871362568
-Prototype Bean is created: 2093613480
-In test method Prototype Bean has Code: 2093613480
-Prototype Bean is created: 1177206467
-In test method Prototype Bean has Code: 1177206467
-Bean X selected
-Third Party Connected!
-SMS service: Order Processed
-2026-10-15T07:37:06.341+05:00 DEBUG 5141 --- [spring-di-exercise] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2026-10-20T16:34:03.083+05:00  INFO 9807 --- [spring-di-exercise] [           main] c.e.s.SpringDiExerciseApplication        : Started SpringDiExerciseApplication in 1.421 seconds (process running for 1.671)
+2026-10-20T16:34:03.084+05:00 DEBUG 9807 --- [spring-di-exercise] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+Hello from MY CUSTOM service!
+2026-10-20T16:34:03.086+05:00 DEBUG 9807 --- [spring-di-exercise] [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2026-10-20T17:02:09.107+05:00 DEBUG 9807 --- [spring-di-exercise] [ionShutdownHook] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2026-10-20T17:02:09.108+05:00 DEBUG 9807 --- [spring-di-exercise] [ionShutdownHook] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@481ba2cf, started on Tue Oct 20 16:34:02 PKT 2026
+2026-10-20T17:02:09.111+05:00  INFO 9807 --- [spring-di-exercise] [ionShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-20T17:02:09.118+05:00  INFO 9807 --- [spring-di-exercise] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-20T17:02:09.120+05:00  INFO 9807 --- [spring-di-exercise] [ionShutdownHook] c.e.s.lifecycle.LifeCycleBean            : 3. Pre Destroy!
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  28:08 min
+[INFO] Finished at: 2026-10-20T17:02:09+05:00
+[INFO] ------------------------------------------------------------------------

@@ -19,20 +19,23 @@ public class SpringDiExerciseApplication {
 	}
 
 	@Bean
-	CommandLineRunner run(SingletonBean singletonBean, NameCheckConsumer nameCheckConsumer, ThirdPartyConsumer thirdPartyConsumer, OrderProcessor orderProcessor){
+	CommandLineRunner run(SingletonBean singletonBean, NameCheckConsumer nameCheckConsumer, ThirdPartyConsumer thirdPartyConsumer,
+						  OrderProcessor orderProcessor, GreetingService greetingService){
 		return  args -> {
 
-			singletonBean.test();
-			singletonBean.test();
-			singletonBean.test();
-			nameCheckConsumer.check();
-			thirdPartyConsumer.useClient();
-			orderProcessor.processOrder();
+//			singletonBean.test();
+//			singletonBean.test();
+//			singletonBean.test();
+//			nameCheckConsumer.check();
+//			thirdPartyConsumer.useClient();
+//			orderProcessor.processOrder();
+			System.out.println(greetingService.greeting());
 
 
 
 
 		};
+
 	}
 
 }
