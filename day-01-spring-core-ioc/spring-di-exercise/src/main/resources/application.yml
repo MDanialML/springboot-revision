@@ -1,0 +1,4 @@
+app:
+  greeting: base
+  name: "   "
+  max-items: 0
