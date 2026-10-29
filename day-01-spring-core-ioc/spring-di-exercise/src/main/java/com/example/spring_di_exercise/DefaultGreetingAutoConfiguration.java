@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class DefaultGreetingConfiguration {
+public class DefaultGreetingAutoConfiguration {
 
     @Bean
     @ConditionalOnMissingBean(GreetingService.class)

@@ -1,4 +1,4 @@
 app:
   greeting: base
-  name: "   "
-  max-items: 0
+  name: "Revision"
+  max-items: 1

@@ -1,4 +1,3 @@
-
 package com.example.spring_di_exercise.lifecycle;
 
 import jakarta.annotation.PostConstruct;
@@ -18,12 +17,12 @@ public class LifeCycleBean {
     }
 
     @PostConstruct
-    public void init() {
+    public void initialize() {
         log.info("2. PostConstruct");
     }
 
     @PreDestroy
     public void destroy() {
-        log.info("3. Pre Destroy!");
+        log.info("3. PreDestroy");
     }
 }
